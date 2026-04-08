@@ -1,0 +1,73 @@
+/* ===== Font Size Modes ===== */
+html.text-normal {
+  font-size: 16px;
+}
+html.text-large {
+  font-size: 20px;
+}
+html.text-xlarge {
+  font-size: 24px;
+}
+
+/* ===== High Contrast Mode ===== */
+html.high-contrast body {
+  background-color: #fff;
+  color: #000;
+}
+html.high-contrast .bg-gray-50 {
+  background-color: #fff !important;
+}
+html.high-contrast .text-gray-400,
+html.high-contrast .text-gray-500 {
+  color: #333 !important;
+}
+html.high-contrast .text-gray-600,
+html.high-contrast .text-gray-700 {
+  color: #000 !important;
+}
+html.high-contrast .border,
+html.high-contrast [class*="border-"] {
+  border-color: #333 !important;
+}
+html.high-contrast .bg-white {
+  background-color: #fff !important;
+  box-shadow: 0 0 0 1px #333;
+}
+html.high-contrast .text-red-600 {
+  color: #b91c1c !important;
+}
+html.high-contrast .bg-red-600 {
+  background-color: #991b1b !important;
+}
+html.high-contrast a:focus,
+html.high-contrast button:focus {
+  outline: 3px solid #000 !important;
+  outline-offset: 2px;
+}
+
+/* ===== Elderly Mode - Larger Touch Targets ===== */
+html.elderly-mode button,
+html.elderly-mode a[href^="tel"],
+html.elderly-mode a[role="button"],
+html.elderly-mode .elderly-touch {
+  min-height: 48px;
+  min-width: 48px;
+}
+
+html.elderly-mode nav a {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+/* Cursor for elderly */
+html.elderly-mode * {
+  cursor: default;
+}
+html.elderly-mode a,
+html.elderly-mode button,
+html.elderly-mode [role="button"],
+html.elderly-mode input,
+html.elderly-mode select,
+html.elderly-mode textarea {
+  cursor: pointer;
+}
